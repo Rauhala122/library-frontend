@@ -2,15 +2,6 @@ import React, { useState } from 'react'
 import { gql, useMutation, useQuery } from '@apollo/client'
 import '../index.css';
 
-const GET_USER = gql`
-  query {
-    me {
-      username
-      favoriteGenre
-    }
-  }
-`
-
 const Recommendations = (props) => {
 
   const user = props.user.me
